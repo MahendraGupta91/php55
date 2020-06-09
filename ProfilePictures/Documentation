@@ -1,0 +1,13 @@
+1. input5.php:    this is php file for creating articles.
+
+2. newaccount.php:   is form for creating new account.
+3. form_otp.php:  this is form which will open after sending otp , in which otp needs to be entered.
+4. sinup_emailVerification.php   is php file whoch will send otp on the email id and will store form (new account creation) into session.
+5. MailSender.php is php file which will provide supporting codes for sending emails.
+6. loginTest.php   this is login page, which will provide different modes of login such as , login by google account.
+7. Mediator5.php   this php file will collect data comming from input5.php and inserts into database.
+8. FileCreator2.php  is create webpage by accessing article data stored in data base and opens created webpage.
+9. differencing_error.php  this page will open whenever any page will have errors. This page will be used to show the error.
+10. ProfileCreator.php     this php file will insert all the information in author table after verification of email id.
+11. db_connection_maker.php  this file keeps the connection code. 
+12 login.php      is a latest updated page  for login. 

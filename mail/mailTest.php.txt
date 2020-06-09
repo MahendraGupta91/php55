@@ -1,0 +1,25 @@
+<?php
+require "PHPMailer/PHPMailerAutoload.php";
+$mail=new PHPMailer();
+$mail->host='smtp.gmail.com';
+$mail->SMTPAuth='true';
+$mail->Username='mahendragupta2211@gmail.com';
+$mail->Password='9582429861';
+$mail->SMTPSecure='tls';
+$mail->Port=587;
+$mail->SetFrom('Mahendra.shau@gmail.com','Mahendra');
+$mail->addAddress('mahendra.shau@gmail.com');
+$mail->addReplyTo('mahendragupta2211@gmail.com','Mahendra');
+$mail->Subject='Differencing Test';
+$mail->Body='Testing System Verification';
+if($mail->send())
+{
+echo 'Mail send succesfully';
+}
+else{
+
+echo 'Sending failed';
+}
+
+
+?>
