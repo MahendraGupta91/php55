@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact US</title>
+  <title>Difference between Call by Value and Call by Reference in C.</title>
   <meta charset="utf-8">
-  <meta name="description" content="">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="icon" href="../images/LearnDifferences_black_logo.png">
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="icon" href="images/LearnDifferences_black_logo.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/mystyle.css">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/TableStyle.css">
+         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -182,14 +180,13 @@
 p
 {
     font-family:Arial,garamond,sans-serif;
-    font-size:14px;
+    font-size:16px;
     font-style:normal; 
     color: #2c4762;
 }
 
 
      </style>
-  
 </head>
 
 <body bgcolor="#E6E6FA">
@@ -230,8 +227,8 @@ p
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li ><a href="#">Home</a></li>
-        <li class="active"><a href="programming.php">Programming</a></li>
-        <li><a href="data_mining.php">Data Mining</a></li>
+        <li class=""><a href="programming.php">Programming</a></li>
+        <li class="active"><a href="data_mining.php">Data Mining</a></li>
         <li><a href="basic_scince.php">Basic Sciences</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -246,56 +243,109 @@ p
     <div class="col-sm-3 sidenav">
       		
 <div class="list-group">
-    <a href="Difference-Between-Structure-Union-in-C.php" class="list-group-item">Structure and Union </a>
-<a href="#" class="list-group-item">malloc() and calloc()</a>
-<a href="#" class="list-group-item">local and global var </a>
+<a href="Difference-Between-Structure-Union-in-C.php" class="list-group-item">Structure and Union </a>
+<a href="Difference-between-actual-formal-parameters-c.php" class="list-group-item">malloc() and calloc()</a>
+<a href="Difference-between-global-and-local-variable-in-c.php" class="list-group-item">Global and Local Variables </a>
 <a href="Difference-between-actual-formal-parameters-c.php" class="list-group-item">Formal and Actual Parameters</a>
-<a href="#" class="list-group-item">getch()and getche()</a>
+<a href="Difference-between-getch-and-getche-in-C.php" class="list-group-item">getch() and getche()</a>
+<a href="Difference-between-getch-and-getche-in-C.php" class="list-group-item active">Call by Value and Call by Reference</a>
 </div>
     </div>
-      <div class="col-sm-7 text-left" style="background-color: #fff; height: 100%"> 
-        <div class=" row container-fluid text-center"></i>
-            
+      <div class="col-sm-7 text-left" style="background-color: #fff">
+          <!--Section: Contact v.2-->
+
+
             <h3>Contact Us.</h3>
             <p align="left" style="font-size: 18px">
             <i class="fa fa-map-marker" style="font-size: 18px" ></i><b>LearnDifferences</b>,<br> Section-1, First Floor, Behind Tehshil,<br> Anil Shivhare Bulding, Bihari Colony, Anuppur M.P. 484224
             <br><b>Email:</b>ld@learndifferences.org<br>
             <i class="fa fa-globe" style="font-size: 20px"></i><strong>Website:</strong><a href="www.learndifferences.org">www.learndifferences.org</a>
             </p>  
-            <hr >
-        </div>
-          <div class="row container-fluid text-left">
-              <form action="login.php" method="POST" name="loginForm">
-                        <div class="form-group">
-                            <label for="Name">Your Name</label>
-                            <input type="text" class="form-control" name="userEmail" aria-describedby="emailHelp" placeholder="Enter email" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email:</label>
-                            <input type="email" class="form-control" name="userPassword" placeholder="Password" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="meaasge">Your Message:</label>
-                            <input type="text"></input>
-                        </div>
-                       
-                        <div class="form-group">
-                            <button class="btn btn-block btn-success" type="submit">Sign in</button>
-                        </div>
-             
-                        <div class="form-group">
-                            <a class='btn btn-primary btn-block' href='newaccount.php'>Create Account.</a>
-                        </div>         
-                    </form>
-          </div>
-     
-    
-       
 
-      </div>                                                                  
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                           
+                            <label for="email" class="">Your email</label>
+                             <input type="text" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12 mb-3">
+
+                        <div class="md-form">
+                            
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+               
+                
+                <div class="text-center text-md-left mt-lg-4">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                
+            </form>
+      
+
+            
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        
+        <!--Grid column-->
+
+    </div>
+
+
+<!--Section: Contact v.2-->
+      </div>
+      
 <div class="col-sm-2 sidenav">
-    <div class="well"> 
-       
+    <div class="well">    
+        
     </div>
     <div class="well">
         
@@ -331,7 +381,7 @@ p
             <p><a href="about-us.php">About Us</a></p>
             <p><a href="contact-us.php">Contact Us.</p>
             <p><a href="privacy-policy.php">Privacy Policy.</p>
-            <p><a href="privacy-policy.php">Social Work.</p>
+          
             
             
         </div>
