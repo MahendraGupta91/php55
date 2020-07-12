@@ -27,7 +27,7 @@ if(isset($_POST["EmailId"]) && isset($_POST["AuthorName"]))
         }
         $otp=str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT);
         $_SESSION['OTP_original']=$otp;
-        $mail->addReplyTo('differencing.org@gmail.com', 'Do Not Reply.');
+        $mail->addReplyTo('differencing18@gmail.com', 'Do Not Reply.');
         $mail->addAddress($_SESSION['EmailId'],$_SESSION['AuthorName']);   // Add a recipient
         
         //$mail->addCC('mahendragupta2211@gmail.com');
